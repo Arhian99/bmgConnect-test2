@@ -6,10 +6,10 @@ import { useFonts } from 'expo-font';
 
 function FinishSignup({ navigation }) {
     return ( 
-        <View style={{display: 'flex', flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+        <KeyboardAvoidingView style={{display: 'flex', flex: 1, alignItems: 'center', justifyContent: 'center'}}>
             <Text>This is the Finish Signup Screen</Text>
             <TouchableOpacity onPress={()=> navigation.navigate('Home')}><Text>Finish</Text></TouchableOpacity>
-        </View>
+        </KeyboardAvoidingView>
     );
 }
 
